@@ -7,3 +7,10 @@
 
 [context.deploy-preview]
   command = "yarn build-preview"
+
+ # Role-based redirects does not have a 'to' property.
+[[redirects]]
+  from = "/*"
+  status = 200
+  conditions = {Role = ["membet"]}
+  force = true
