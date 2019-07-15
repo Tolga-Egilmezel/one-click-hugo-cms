@@ -12,5 +12,11 @@
 [[redirects]]
   from = "/*"
   status = 200
-  conditions = {Role = ["membet"]}
+  conditions = {Role = ["member"]}
+  force = true
+
+[[redirects]]
+  from = "/*"
+	to = "/login.html"
+  status = 404
   force = true
